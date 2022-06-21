@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def list_todo_items(request):
-    return HttpResponse('from list_todo_items')
+    return render(request, 'base/todo_list.html')
